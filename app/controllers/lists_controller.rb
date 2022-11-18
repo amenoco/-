@@ -10,6 +10,11 @@ class ListsController < ApplicationController
     redirect_to '/top'
   end
 
+  def index
+    @list = List.all
+  end
+
+
 
    private
 
